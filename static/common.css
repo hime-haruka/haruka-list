@@ -1,0 +1,170 @@
+@import "./reset.css";
+
+/* Font */
+.maru {
+    font-family: 'MaruBuri';
+    transform : rotate(0.03deg);
+}
+.maruB {
+    font-family: 'MaruBuriBold';
+    transform : rotate(0.03deg);
+    font-size: 1.3rem;
+}
+
+/* Global */
+span {
+    font-family: "Sawarabi Mincho";
+    font-size: 0.8rem;
+    transform : rotate(0.03deg);
+}
+
+.wrap {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+/* background */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* notice */
+.notice-Wrap {
+    width: 100%;
+    max-height: 20vh;
+    background-color: #ffffff6e;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/* 스크롤 디자인 */
+.notice-Wrap::-webkit-scrollbar {
+    width: 5px;
+    height: auto;
+}
+
+.notice-Wrap::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgb(0, 132, 255);
+}
+
+.notice-Wrap::-webkit-scrollbar-track {
+    background-color: #35353557;
+}
+
+/* notice title */
+
+.noti-title h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+}
+
+/* notice content */
+.notice-Wrap a {
+    color: rgb(0, 132, 255);
+    font-weight: 600;
+}
+.noti-list {
+    font-size: 1.2rem;
+    list-style: disc inside;
+}
+
+.noti-list li {
+    padding: 0.3rem 0;
+}
+
+.noti-list li:last-child {
+    color: #333;
+}
+
+.noti-list li p {
+    display: inline;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+}
+
+
+/* table */
+.table-Wrap {
+    width: calc(100% + 20px);
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+/* 스크롤 바 */
+.table-Wrap::-webkit-scrollbar {
+    width: 5px;
+    height: auto;
+}
+
+.table-Wrap::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgb(0, 132, 255);
+}
+
+.table-Wrap::-webkit-scrollbar-track {
+    background-color: #35353557;
+}
+
+#table {
+    width: 100%;
+    border-spacing: 0.15rem;
+}
+
+/* table content */
+/* thead */
+thead {
+    text-align: left;
+}
+
+thead tr th,  thead tr td {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px;
+}
+
+thead tr th img{
+    padding-left: 1rem;
+}
+
+/* tbody */
+tbody tr td {
+    font-size: 1.2rem;
+    background-color: #ffffff62;
+    padding: 10px;
+}
+
+tbody tr td a {
+    display: block;
+    text-align: center;
+}
