@@ -12,11 +12,6 @@
 }
 
 /* Global */
-span {
-    font-family: "Sawarabi Mincho";
-    font-size: 0.8rem;
-    transform : rotate(0.03deg);
-}
 
 .wrap {
     width: 80vw;
@@ -167,4 +162,10 @@ tbody tr td {
 tbody tr td a {
     display: block;
     text-align: center;
+}
+
+tbody tr td span {
+    font-family: "Sawarabi Mincho";
+    font-size: 0.8rem;
+    transform : rotate(0.03deg);
 }

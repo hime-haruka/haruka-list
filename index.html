@@ -9,13 +9,17 @@
     <title>요미와 하루카 노래책</title>
 
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./static/common.css">
 
     <!-- Js -->
     <script src="./static/sort.js"></script>
+
+    <!-- PlugIns -->
+        <!-- tablesorter -->
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.32.0/js/jquery.tablesorter.min.js"></script>
 
     <!-- Font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
@@ -38,13 +42,14 @@
                 </div>
                 <div class="noti-list-wrap">
                     <ul class="noti-list maru">
+                        <li><p>현재까지 <span class="countTR"></span>곡이 추가되어 있습니다.</p></li>
                         <li><p>노래 방송이 아닐 때는 컨디션에 따라 부를 수도 있고, 안 부를 수도 있습니다. 슈뢰딩거의 노래책.</p></li>
                         <li><p>컨디션에 따라 거절하는 곡이 있을 수 있습니다.</p></li>
                         <li><p>곡 추천 언제든지 환영! <a href="https://cafe.naver.com/onlyusofficial" target="_blank">팬카페✦</a>나 <a href="https://chzzk.naver.com/7a0af3c7eee1698bda93cb3b95d6f7e4" target="_blank">방송중✦</a>에 채팅에서 말씀해주세요. </p></li>
                         <li><p>제목, 아티스트, 장르를 클릭하면 정렬됩니다.</p></li>
                         <li><p>되도록 Chrome에서 열어주세요. 다른 브라우저에서 호환성 체크가 미비한 상태.</p></li>
                         <li><p>모바일 웹 수정 중...</p></li>
-                        <li><p class="update">Last Update 2024.11.11</p></li>
+                        <li><p class="update">Last Update 2024.11.12</p></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +58,7 @@
         <!-- table -->
         <section>
             <div class="table-Wrap maru">
-                <table id="table">
+                <table id="table" class="tablesorter">
                     <!-- colgroup -->
                     <colgroup>
                         <col width="35%"/>
@@ -66,9 +71,9 @@
                     <!-- table-haeder -->
                      <thead>
                         <tr class="maruB">
-                            <th>제목<img src="./static/images/sort-up.svg"></th>
-                            <th>아티스트<img src="./static/images/sort-up.svg"></th>
-                            <th>장르<img src="./static/images/sort-up.svg"></th>
+                            <th>제목<img src="./static/images/sort-down.svg"></th>
+                            <th>아티스트<img src="./static/images/sort-down.svg"></th>
+                            <th>장르<img src="./static/images/sort-down.svg"></th>
                             <td>링크</td>
                             <td>비고</td>
                         </tr>
@@ -76,30 +81,373 @@
 
                     <!-- tabel-body -->
                      <tbody>
-
-                        <!-- <tr>   
-                            <td><span> / </span></td>
-                            <td><span> / </span></td>
+                        <tr>
+                            <td>47<span> / ヨンジュウナナ</span></td>
+                            <td>미키토P<span> / みきとP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/Tx2QSaWFmgA?si=w3myGkrX_lTjPJqJ" target="_blank">⯌</a></td>
                             <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Again</td>
+                            <td>YUI</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/21m4vnzBFrU?si=w8MS1EmeNhONDCtg" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>AM 2:00</td>
+                            <td>Aimer</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/y_hHyMJIIuc?si=6RKH95R94ZusFYe4" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>BATTLE BATTLE BATTLE</td>
+                            <td>Fling Posse・麻天狼</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/cWUGv_ZkEfY?si=YK2vceRFurADG7BG" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>DEATH RESPECT</td>
+                            <td>Mad Trigger Crew・麻天狼</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/N-b53wMZTNI?si=A_ahBCcYPAAO8NZd" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Hoodstar +</td>
+                            <td>Division All Stars</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/lJfMsqzRtcw?si=hn_Kw_i5Jnpw4SQr" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Loving You 시간을넘어서</td>
+                            <td>김연정</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/u_3gSqkbLQY?si=LFD2wHPLlOLAumzn" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Stella</td>
+                            <td>Fling Posse</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/fA-GoYK1m3Y?si=iQewFac15-Uk-rIc" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>take it shake it</td>
+                            <td>Sugar</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/JPCxYrShvKk?si=otxaxMlT6goxtwuy" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ti Amo</td>
+                            <td>EXILE</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/mmGdRARkrjM?si=z3zwcXfI8PkpxZzF" target="_blank">⯌</a></td>
+                            <td>+4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Shibuya Marble Texture -PCCS-</td>
+                            <td>Fling Posse</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/qEeM23qPXpw?si=PFGhlV0GGKxOYEjm" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>To My Wish</td>
+                            <td>정여진</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/y6xlDsJD9NE?si=KDxGnf--HN1lOWdo" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>내게와줘</td>
+                            <td>김연정</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/AycxMUk8PlU?si=KuLFwiHZhigDHamr" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>무지개<span> / 虹</span></td>
+                            <td>니노미야 카즈나리<span> / 二宮和也</span></td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/UCAiH3A0Zwk?si=m2lCL2z8xcBtamTI" target="_blank">⯌</a></td>
+                            <td>+４</td>
+                        </tr>
+
+                        <tr>
+                            <td>슈가슈가룬</td>
+                            <td>김령희</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/h7J7o28K5j8?si=uCt4EqwSP9-_QPvV" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>아아 오사카 드리밍 나이트<span> / あゝオオサカ dreamin' night</span></td>
+                            <td>도츠이타레 혼포<span> / どついたれ本舗</span></td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/bv25QU4AgJM?si=MZe-uG-XcrLwuraF" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>안녕! 디지몬</td>
+                            <td>장숙희</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/5WnmPPonoL8?si=k6HplX8k72ufBarT" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>원 룸 올 댓 재즈<span> / ワンルーム・オール・ザット・ジャズ</span></td>
+                            <td>DATEKEN</td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/hGmWliKl02A?si=6Trsb3pYoQPPVcvk" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>인어의 전설</td>
+                            <td>소연</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/Y5BOonVNaYg?si=VILkGqIl5LIL_HdD" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>태양의 낙원<span> / 太陽の楽園</span></td>
+                            <td>피치피치핏치</td>
+                            <td>김효연</td>
+                            <td><a href="https://youtu.be/TQfoeiapspQ?si=3-Cf7TQKVr4tO4SB" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>피아노×포르테×스캔들<span> / ピアノ×フォルテ×スキャンダル</span></td>
+                            <td>OSTER project</td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/haSY0XUEViM?si=3oyWLCoqzguKW32X" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>WAR WAR WAR</td>
+                            <td>Buster Bros!!!・MAD TRIGGER CREW</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/nxJ-666GONE?si=TdOSnOuRf3XCKaRw" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>티그라디아<span> / チグリジア</span></td>
+                            <td>칸논자카 돗포<span> / 観音坂独歩</span></td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/50CP8vUYDmo?si=mOOEcnVWm8nG483s" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Bad Ass Temple funky Sound</td>
+                            <td>Bad Ass Temple</td>
+                            <td>히프마이</td>
+                            <td><a href="https://youtu.be/Br9KdS01ApQ?si=oWbfFRp0rJGYhDMl" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>연인을 쏘아 떨어뜨린 날<span> / 恋人を射ち堕とた日</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
                             <td><a href="" target="_blank">⯌</a></td>
                             <td></td>
                         </tr>
 
                         <tr>
-                            <td><span> / </span></td>
-                            <td><span> / </span></td>
-                            <td></td>
-                            <td><a href="" target="_blank">⯌</a></td>
+                            <td>Yield</td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/a5pDtr51qZA?si=61TAvDgZB0lqVTGW" target="_blank">⯌</a></td>
                             <td></td>
                         </tr>
 
                         <tr>
-                            <td><span> / </span></td>
-                            <td><span> / </span></td>
+                            <td>엘의 그림책 【피리부는 사나이와 퍼레이드】<span> / エルの絵本 【笛吹き男とパレード】</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/2XY0xLU_Hwo?si=lC6CxwJH0o2llvFX" target="_blank">⯌</a></td>
                             <td></td>
-                            <td><a href="" target="_blank">⯌</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>StarDust</td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/H6bXEwGsz90?si=XXNMhzPPU794wkIM" target="_blank">⯌</a></td>
                             <td></td>
-                        </tr> -->
+                        </tr>
+
+                        <tr>
+                            <td>종언의 왕과 이세계의 기사<span> / 終端の王と異世界の騎士</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/j-IEtK2hmZA?si=eOSs18Rq74BbD42M" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>저주받은 보석<span> / 呪われし宝石</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/8P_mJpU7WC0?si=96bXzXHusaLIcMjB" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>아름다운 것<span> / 美しきもの</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/RQCesLkfDbU?si=ksFhI59ohC-1CrrV" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>돌계단의 붉은 악마<span> / 石畳の緋き悪魔</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/42LzPa2CoUE?si=dXp5mKP6pDNCcW0_" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>죽어가는 소녀 그 손에는 수월<span> / 死せる乙女その手には水月</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/-GdOkOAVaSg?si=on2fhaRMjGHLy3Fb" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>침략하는 자 침략당하는 자<span> / 侵略する者される者</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/R95S8mxcARk?si=1nQFfnZn66-ZGiGi" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>모래먼지 저편에...<span> / 砂塵の彼方へ…</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/UdHCHNsNkOs?si=yy3Dv-VlhHi8dfTc" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>전쟁의 계보<span> / 争いの系譜</span></td>
+                            <td>Sound Horizon</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/as5PYevxwyY?si=kvUcHlnnuFtMkL-d" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Every Heart</td>
+                            <td>BoA</td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/ErbuFfPe6Og?si=1MrT2Ns2VGxke-qt" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Don't say “lazy”</td>
+                            <td>사쿠라고 경음부<span> / 桜高軽音部</span></td>
+                            <td>애니메이션</td>
+                            <td><a href="https://youtu.be/JvKe3dAlkWQ?si=ObKcZELaeSL6eaNb" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>꽃이 되어<span> / 花になって</span></td>
+                            <td>녹황색사회<span> / 緑黄色社会</span></td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/9yJg7GKNj_Y?si=YlYElcWOyqj-yLld" target="_blank">⯌</a></td>
+                            <td>연습 중</td>
+                        </tr>
+
+                        <tr>
+                            <td>다른 사람의 여자친구가 됐어<span> / 別の人の彼女になったよ</span></td>
+                            <td>wacci</td>
+                            <td>J-POP</td>
+                            <td><a href="https://youtu.be/FFiMlB02Xwo?si=koYs1wE6SNpPhg4h" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>리스키 게임<span> / リスキーゲーム</span></td>
+                            <td>흑토끼P<span> / 黒うさP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/69lfYj3LWBU?si=xpkiIyIQrzaX9cpy" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>아리아드네<span> / アリアドネ</span></td>
+                            <td>흑토끼P<span> / 黒うさP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/lcV6IzOb5cA?si=uZOlS1tA9d2W-EZx" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>시저 핸드<span> / シザーハンズ</span></td>
+                            <td>Nem</td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/kXryumVpr6o?si=fiinuJDK4c1uyAgm" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>심장 데모크라시<span> / 心臓デモクラシー</span></td>
+                            <td>미키토P<span> / みきとP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/otVjgYjfop0?si=awoSAkEMwCxpCWRY" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>발레리코<span> / バレリーコ</span></td>
+                            <td>미키토P<span> / みきとP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/IqsWveX5s-Q?si=2fPV7Or5jn9L4gPj" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>세타가야 나이트 사파리<span> / 世田谷ナイトサファリ</span></td>
+                            <td>미키토P<span> / みきとP</span></td>
+                            <td>VOCALOID</td>
+                            <td><a href="https://youtu.be/zhadVCi6qH4?si=WMkDXOjMUD64AHXr" target="_blank">⯌</a></td>
+                            <td></td>
+                        </tr>
 
                         <tr>
                             <td>낙원<span> / 楽園</span></td>
@@ -108,7 +456,6 @@
                             <td><a href="https://youtu.be/rinTMKEOvUI?si=vHlbtytyJmhKnAQV" target="_blank">⯌</a></td>
                             <td></td>
                         </tr>
-
                         
                         <tr>
                             <td>최고의 첫사랑<span> / 最高の片想い</span></td>
@@ -124,14 +471,6 @@
                             <td>히카사 요코<span> / 日笠陽子</span></td>
                             <td>애니메이션</td>
                             <td><a href="https://youtu.be/XZsNamMxZ_Q?si=1acnSJH-n5D42QuH" target="_blank">⯌</a></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td>AM 2:00</td>
-                            <td>Aimer</td>
-                            <td>J-POP</td>
-                            <td><a href="https://youtu.be/y_hHyMJIIuc?si=6RKH95R94ZusFYe4" target="_blank">⯌</a></td>
                             <td></td>
                         </tr>
                         
@@ -192,14 +531,6 @@
                         </tr>
 
                         <tr>
-                            <td>Again</td>
-                            <td>YUI</td>
-                            <td>애니메이션</td>
-                            <td><a href="https://youtu.be/21m4vnzBFrU?si=w8MS1EmeNhONDCtg" target="_blank">⯌</a></td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
                             <td>천사에게 닿았어<span> / 天使にふれたよ</span></td>
                             <td>방과 후 티타임<span> / 放課後ティータイム</span></td>
                             <td>애니메이션</td>
@@ -256,7 +587,7 @@
                         </tr>
 
                         <tr>
-                            <td>rain stops,good-bye</td>
+                            <td>rain stops, good-bye</td>
                             <td>니오<span> / にお</span></td>
                             <td>VOCALOID</td>
                             <td><a href="https://youtu.be/nJ6Eq8agiLk?si=2_879pKnhOOIgLbw" target="_blank">⯌</a></td>
@@ -736,14 +1067,6 @@
                         </tr>
 
                         <tr>
-                            <td>쥬브나일<span> / ジュブナイル</span></td>
-                            <td>Dixie Flatline</td>
-                            <td>VOCALOID</td>
-                            <td><a href="https://youtu.be/nkwLF4bTn80?si=WdAn37N2a26gFM0-" target="_blank">⯌</a></td>
-                            <td>유료</td>
-                        </tr>
-
-                        <tr>
                             <td>아야노의 행복이론<span> / アヤノの幸福理論</span></td>
                             <td>진(자연의 적)<span> / じん(自然の敵P)</span></td>
                             <td>VOCALOID</td>
@@ -761,7 +1084,7 @@
 
                         <tr>
                             <td>엔비자카의 재봉소<span> / 円尾坂の仕立屋</span></td>
-                            <td><span></span></td>
+                            <td>mothy_악의P<span> / mothy_悪ノP</span></td>
                             <td>VOCALOID</td>
                             <td><a href="https://youtu.be/l0kAZxoyR1I?si=GcfpipeJTDstN687" target="_blank">⯌</a></td>
                             <td></td>
